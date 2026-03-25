@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Accesibilidad - Movilidad Tarragona</title>
+    <meta name="description" content="Cartografía interactiva y mapas QGIS de la red de transporte en Tarragona.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><span class="logo-icon">🚌</span>TGN Mobilitat</a>
+            <button class="mobile-menu-btn" id="mobile-menu">☰</button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="info.html">Información</a></li>
+                    <li><a href="multimedia.html">Multimedia</a></li>
+                    <li><a href="mapa.html">Mapa</a></li>
+                    <li><a href="contacte.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-container">
+        <h1 class="section-title">Mapa de Accesibilidad</h1>
+        
+        <p class="text-center" style="max-width: 800px; margin: 0 auto 3rem; font-size: 1.125rem;">
+            El mapa muestra la distribución de las paradas de transporte público dentro de la ciudad de Tarragona y su relación con algunos de los principales equipamientos urbanos. Esta representación permite visualizar cómo el transporte público conecta diferentes barrios y facilita el acceso a servicios esenciales como hospitales, universidades o estaciones.
+        </p>
+
+        <div class="map-grid">
+            <div class="map-container">
+                <!-- Google Maps iframe -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47864.717142103505!2d1.2132392762744827!3d41.13998188174415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a3fdac94b79ac7%3A0xc3f1012356715fbc!2sTarragona!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            
+            <div class="qgis-card">
+                <h3 style="margin-bottom: 1rem;">Cartografía Técnica</h3>
+                <p style="margin-bottom: 1.5rem; color: var(--text-light); font-size: 0.95rem;">
+                    Los siguientes mapas están desarrollados con QGIS y ofrecen un nivel de detalle cartográfico profesional sobre la infraestructura de la EMT local.
+                </p>
+                <img src="img/tarragona_qgis.png" alt="Mapa QGIS de Tarragona" style="border: 1px solid #e5e7eb; border-radius: 8px;">
+                <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 1rem; text-align: center;">
+                    <em>Figura 1: Densidad de red de paradas</em>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section"><h3>TGN Mobilitat</h3><p>Proyecto divulgativo sobre el acceso al transporte público en Tarragona.</p></div>
+            <div class="footer-section"><h3>Enlaces Rápidos</h3><a href="index.html">Inicio</a><a href="info.html">Información General</a><a href="mapa.html">Mapa Interactivo</a></div>
+            <div class="footer-section"><h3>Contacto</h3><p>¿Tienes dudas o sugerencias?</p><a href="contacte.html" class="btn" style="margin-top: 1rem; display: inline-block;">Escríbenos</a></div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TGN Mobilitat. Proyecto Académico.</p>
+            <div class="footer-links"><a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Volver al inicio ⭱</a></div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

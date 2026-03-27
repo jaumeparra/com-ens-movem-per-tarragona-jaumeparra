@@ -1,43 +1,72 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobilitat i Transport Públic</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Informació General - Movilitat Tarragona</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li><a href="#info">Info</a></li>
-            <li><a href="#about">Sobre nosaltres</a></li>
-            <li><a href="#contact">Contacte</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="info">
-            <h1>Mobilitat i Transport Públic</h1>
-            <div class="info-grid">
-                <div class="info-item">
-                    <h2>Transport Públic</h2>
-                    <p>Aconsegueix una millor qualitat de vida mitjançant el transport públic.</p>
-                    <img src="public_transport.jpg" alt="Transport Públic">
-                </div>
-                <div class="info-item">
-                    <h2>Mobilitat</h2>
-                    <p>Iniciatives dirigides a promoure la mobilitat sostenible.</p>
-                    <img src="mobility.jpg" alt="Mobilitat">
-                </div>
+    <header class="main-header">
+        <div class="nav-container">
+@@ -25,38 +27,57 @@
+    </header>
+
+    <main class="page-container">        
+        <h1 class="section-title">Movilitat i transport públic</h1>
+
+        <div class="info-grid">
+            <div class="info-content">
+                <h2>Què és la mobilitat urbana?</h2>
+                <p>La mobilitat urbana és un element clau en l'organització del territori i en la vida quotidiana de les
+                    persones. Es refereix als desplaçaments que realitzen els ciutadans diàriament dins de l'entorn de
+                    la ciutat per accedir al treball, estudis, salut o oci.</p>
+
+                <h2>Per què el transport públic és important?</h2>
+                <p>El transport públic connecta diferents zones de la ciutat i facilita l'accés universal a serveis
+                    essencials. En una ciutat com Tarragona, amb una topografia complexa i barris dispersos, la xarxa
+                    d'autobusos urbans (EMT) juga un paper unificador indispensable.</p>
+
+                <h2>Estructurant la ciutat</h2>
+                <p>El disseny de les línies i parades no només respon a la demanda, sinó que estructura el creixement de
+                    la ciutat. Un sistema de mobilitat sostenible millora la qualitat de l'aire, redueix els embussos i
+                    augmenta l'equitat social en proveir accessibilitat sense dependre d'un vehicle privat.</p>
             </div>
-        </section>
-        <section id="new-work-photos">
-            <h2>Noves Fotos de la Obra</h2>
-            <img src="work_photo1.jpg" alt="Obra 1">
-            <img src="work_photo2.jpg" alt="Obra 2">
-        </section>
+            
+
+            <div class="info-image">
+                <img src="img/tarragona_bus.png" alt="Autobús de Tarragona circulando en un día soleado"
+                    style="width:100%; height:auto;">
+            </div>
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2026 Mobilitat i Transport Públic. Tots els drets reservats.</p>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+                <h3>TGN Mobilitat</h3>
+                <p>Projecte divulgatiu sobre l'accés al transport públic a Tarragona.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enllaços Ràpids</h3><a href="index.html">Inici</a><a href="info.html">Informació</a><a
+                    href="mapa.html">Mapa Interactivo</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contacte</h3>
+                <p>Tens dubtes o suggeriments?</p><a href="contacte.html" class="btn"
+                    style="margin-top: 1rem; display: inline-block;">Escriu-nos</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TGN Mobilitat. Projecte Acadèmic.</p>
+            <div class="footer-links"><a href="#"
+                    onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Tornar a l'inici ⭱</a></div>
+        </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
+</html>
+
 </html>

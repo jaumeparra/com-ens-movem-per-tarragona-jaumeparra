@@ -48,33 +48,6 @@ La carpeta del mapa és: `qgis2web_2026_06_16-21_47_31_151264/`
 
 ---
 
-## Com Obrir la Web
-
-El mapa interactiu s'ha integrat **directament** a les pàgines HTML (sense iframes). Això vol dir que:
-
-> ✅ **La web funciona fent doble clic a `index.html` i obrint-lo directament amb Chrome, sense necessitat de cap servidor local.**
-
-### Obre directament amb Chrome
-
-1. Ves a la carpeta del projecte
-2. Fes doble clic a `index.html`
-3. S'obrirà automàticament al navegador predeterminat
-
-Si no s'obre amb Chrome, fes clic dret → *Obrir amb* → *Google Chrome*.
-
-### Opció alternativa: Servidor local (Python)
-
-Si vols un entorn més semblant a producció, pots llançar un servidor local des de la carpeta arrel:
-
-```bash
-python3 -m http.server 8000
-```
-
-Obre el navegador i visita:
-```
-http://localhost:8000
-```
-
 ---
 
 ## Estructura de Carpetes
